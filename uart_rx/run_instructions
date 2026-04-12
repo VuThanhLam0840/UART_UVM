@@ -1,0 +1,23 @@
+Compile using Siemens:
+======================
+make compile_uart
+
+Simulate in command mode using Siemens:
+=======================================
+make run test_name=uart_demo_test
+
+Simulate in GUI mode using Siemens:
+===================================
+vsim top -voptargs=+acc +UVM_TESTNAME=uart_demo_test
+log -r /*
+run -a
+<Select no when prompted>
+
+Compile using Cadence:
+======================
+make compile_uart tool=Cadence
+
+Simulate in command mode using Cadence:
+=======================================
+make run test_name=uart_demo_test tool=Cadence
+

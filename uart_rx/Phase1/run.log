@@ -1,0 +1,69 @@
+vsim -c top -do sim.do +UVM_TESTNAME=uart_demo_test
+Reading E:/Questa/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim +UVM_TESTNAME=uart_demo_test -do sim.do -c top 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.uart_seq_pkg(fast)
+# Loading work.uart_cfg_pkg(fast)
+# Loading work.uart_tlm_pkg(fast)
+# Loading work.uart_chk_pkg(fast)
+# Loading work.uart_slave_agent_pkg(fast)
+# Loading work.uart_agent_pkg(fast)
+# Loading work.uart_env_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.uart_if(fast)
+# Loading work.receiver(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading E:/Questa/uvm-1.1d\win64\uvm_dpi.dll
+# do sim.do 
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.2
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_demo_test...
+# UVM_INFO /home/lam/TKVM1/uart_rx/tb/tst/uart_demo_test.sv(49) @ 0: uvm_test_top [uvm_test_top] Raising objection
+# ** Fatal: (SIGSEGV) Bad handle or reference.
+#    Time: 0 ps  Iteration: 46  Process: /uvm_pkg::uvm_task_phase::execute/#FORK#138(#ublk#215181159#138)_4f72cf06 File: E:/Questa/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh
+# Fatal error in Task uart_test_pkg/uart_demo_test::run_phase at /home/lam/TKVM1/uart_rx/tb/tst/uart_demo_test.sv line 53
+# 
+# HDL call sequence:
+# Stopped at /home/lam/TKVM1/uart_rx/tb/tst/uart_demo_test.sv 53 Task uart_test_pkg/uart_demo_test::run_phase
+# called from  E:/Questa/win64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh 245 Task uvm_pkg/uvm_run_phase::exec_task
+# called from  E:/Questa/win64/../verilog_src/uvm-1.1d/src/base/uvm_task_phase.svh 150 Function uvm_pkg/uvm_task_phase::execute
+# 
+VSIM 2> exit

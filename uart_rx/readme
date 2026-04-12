@@ -1,0 +1,21 @@
+Introduction:
+=============
+  This testbench verifies a simple UART receiver
+  Fixed baud rate at 115200
+  Clock frequency is 10Mhz
+  1 start bit
+  8 data bits (LSB first)
+  1 stop bit
+  no parity
+  Upon completing the transfer, the DUT outputs the 8-bit data with 
+  valid signal asserted for one clock
+
+Data Check
+==============
+1. Create UART transaction class that contains the random 8-bit data
+2. UART driver receives UART packet, then add start and stop bits  and sends the data serially
+3. UART driver also sends the packet to ap port (reference)
+4. UART monitor checks for the stop bit
+5. UART monitor detects o_valid and captures o_data (actual)
+6. The scoreboard performs the comparison of reference and actual data
+
