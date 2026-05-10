@@ -1,0 +1,28 @@
+The design is a simple UART receiver that implements the following constant settings:
+  - Baud rate = 115200
+  - Clock period = 10Mhz => Clocks_per_bit = 10,000,000/115200 = 87
+  - No parity bit
+  - Frame = start bit : 8-bit data : stop bit
+  - First bit transmitted is LSB
+  - After a successful transfer, o_Rx_DV is asserted high for one clock
+    and o_Rx_Byte can be sampled 
+The testbench
+  - Generate a 87Hz clock => period of 11500ms
+  - Driver
+      Randomize rx_data
+      task send_data(rx_data)
+        tx_data = {stop_bit,rx_data,start_bit}
+        for (int ii=0; ii<10; ii++) begin
+          @(posedge tx_clk);
+          uart_if.i_Rx_Serial <= tx_data[ii];
+        end
+        @(posedge tx_clk);
+        act_pkt.o_rs_dv = uart_if.o_Rx_DV; 
+  - Monitor the uart.if for a valid transfer
+    Predict assertion of o_Rx_DV
+    Verify o_Rx_Byte 
+  - in_tlm
+      bit [7:0] in_rx_data;
+  - out_tlm
+      bit o_rx_dv;
+      bit [7:0] o_rx_byte;

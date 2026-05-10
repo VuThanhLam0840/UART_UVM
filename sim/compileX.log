@@ -1,0 +1,145 @@
+Modifying modelsim.ini
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/env /home/lam/TKVM1/uart_rx_x/inf/clk_rst_if.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling interface clk_rst_if
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/env /home/lam/TKVM1/uart_rx_x/inf/uart_if.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling interface uart_if
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/dut /home/lam/TKVM1/uart_rx_x/dut/receiver.v
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module receiver
+
+Top level modules:
+	receiver
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/tlm +incdir+/home/lam/TKVM1/uart_rx_x/tb/env /home/lam/TKVM1/uart_rx_x/tb/tlm/uart_tlm_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_tlm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/cfg /home/lam/TKVM1/uart_rx_x/tb/cfg/uart_cfg_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_cfg_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/agt/master/seq +incdir+/home/lam/TKVM1/uart_rx_x/tb/env /home/lam/TKVM1/uart_rx_x/tb/agt/master/seq/uart_seq_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_seq_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/agt/master +incdir+/home/lam/TKVM1/uart_rx_x/tb/env /home/lam/TKVM1/uart_rx_x/tb/agt/master/uart_agent_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_agent_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package uart_cfg_pkg
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/agt/slave +incdir+/home/lam/TKVM1/uart_rx_x/tb/env /home/lam/TKVM1/uart_rx_x/tb/agt/slave/uart_slave_agent_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_slave_agent_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/tlm +incdir+/home/lam/TKVM1/uart_rx_x/tb/env +incdir+/home/lam/TKVM1/uart_rx_x/tb/chk /home/lam/TKVM1/uart_rx_x/tb/chk/uart_chk_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_chk_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package uart_tlm_pkg
+-- Importing package uart_cfg_pkg
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/env /home/lam/TKVM1/uart_rx_x/tb/env/uart_env_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_env_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package uart_agent_pkg
+-- Importing package uart_cfg_pkg
+-- Importing package uart_slave_agent_pkg
+-- Importing package uart_chk_pkg
+-- Importing package uart_tlm_pkg
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  +incdir+/home/lam/TKVM1/uart_rx_x/tb/env +incdir+/home/lam/TKVM1/uart_rx_x/tb/tst /home/lam/TKVM1/uart_rx_x/tb/tst/uart_test_pkg.svh
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package uart_test_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package uart_env_pkg
+-- Importing package uart_agent_pkg
+-- Importing package uart_cfg_pkg
+-- Importing package uart_slave_agent_pkg
+-- Importing package uart_chk_pkg
+-- Importing package uart_tlm_pkg
+-- Importing package uart_seq_pkg
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+vlog  -sv /home/lam/TKVM1/uart_rx_x/tb/env/top.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+** Note: (vlog-2286) Using implicit +incdir+E:/Questa/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package uart_test_pkg
+-- Importing package uart_env_pkg
+-- Importing package uart_agent_pkg
+-- Importing package uart_cfg_pkg
+-- Importing package uart_slave_agent_pkg
+-- Importing package uart_chk_pkg
+-- Importing package uart_tlm_pkg
+-- Importing package uart_seq_pkg
+-- Compiling module top
+
+Top level modules:
+	top
+vopt +acc top -o vopt_top +designfile
+QuestaSim-64 vopt 10.2c Compiler 2013.07 Jul 19 2013
+
+Top level modules:
+	top
+
+Analyzing design...
+-- Loading module top
+-- Loading package mtiUvm.questa_uvm_pkg
+-- Loading interface clk_rst_if
+-- Loading interface uart_if
+-- Loading module receiver
+Optimizing 15 design-units (inlining 0 instances):
+-- Optimizing module receiver(fast)
+** Note: (vopt-143) Recognized 1 FSM in module "receiver(fast)".
+-- Optimizing module top(fast)
+-- Optimizing interface clk_rst_if(fast)
+-- Optimizing interface uart_if(fast)
+-- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+-- Optimizing package uart_chk_pkg(fast)
+-- Optimizing package uart_slave_agent_pkg(fast)
+-- Optimizing package uart_env_pkg(fast)
+-- Optimizing package uart_test_pkg(fast)
+-- Optimizing package top_sv_unit(fast)
+-- Optimizing package uart_seq_pkg(fast)
+-- Optimizing package uart_cfg_pkg(fast)
+-- Optimizing package uart_tlm_pkg(fast)
+-- Optimizing package uart_agent_pkg(fast)
+-- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+Optimized design name is vopt_top
